@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\eltin\Documents\demo website\Views\stylesheets\semi.css">
+    <title>Document</title>
+</head>
+<style>
+    .header {
+        background-color: black !important;
+    }
+
+    .header-img {
+        max-width: 100%;
+        height: 170px;
+        background: #1E21287A;
+        /* neutral-800 */
+    }
+
+    .new {
+        position: absolute;
+        left: 25%;
+        top: 480px;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 24px;
+        line-height: 36px;
+        color: #262020FF;
+        /* primary-500 */
+    }
+
+    .handgun-home {
+        position: absolute;
+        top: 580px;
+        left: 25%;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        color: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .feature {
+        position: absolute;
+        top: 700px;
+        left: 55%;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 18px;
+        line-height: 28px;
+        color: #262020FF;
+        /* primary-500 */
+    }
+
+    .premium {
+        position: absolute;
+        top: 1100px;
+        left: 55%;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 18px;
+        line-height: 28px;
+        color: #262020FF;
+        /* primary-500 */
+    }
+
+
+    .box {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 994px;
+        height: 168px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 8px;
+        /* border-xl */
+        box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
+        font-size: 0;
+        float: left;
+        border-right: none;
+    }
+
+    .box2 {
+        position: absolute;
+        top: 640px;
+        left: 25%;
+        width: 333px;
+        height: 447px;
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+        /* shadow-xs */
+    }
+
+    .box3 {
+        position: absolute;
+        top: 640px;
+        left: 43%;
+        width: 651px;
+        height: 43px;
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+        /* shadow-xs */
+    }
+
+    .year1 {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .min2 {
+        position: absolute;
+        top: 50px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .min2 input {
+        width: 135px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .min2 svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .min2 .label {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* hover */
+    .min2 input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .min2 input:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .min2 input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .min2 :disabled+.icon,
+    .min2 :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .max2 {
+        position: absolute;
+        top: 50px;
+        left: 170px;
+        opacity: 1;
+    }
+
+    .max2 input {
+        width: 135px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .max2 svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    /* hover */
+    .max2 input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .max2 input:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .max2 input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .max2 :disabled+.icon,
+    .max2 :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .new-firearms {
+        position: absolute;
+        top: 100px;
+        left: 25px;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 1;
+    }
+
+    .used-firearms {
+        position: absolute;
+        top: 100px;
+        left: 170px;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 1;
+    }
+
+    .brand {
+        position: absolute;
+        top: 144px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .brand input {
+        width: 280px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        /* Body */
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .type {
+        position: absolute;
+        top: 211px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .type input {
+        width: 280px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        /* Body */
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .colours {
+        position: absolute;
+        top: 278px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .colours input {
+        width: 280px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        /* Body */
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .seller {
+        position: absolute;
+        top: 345px;
+        left: 25px;
+        opacity: 1;
+    }
+
+    .seller input {
+        width: 280px;
+        height: 36px;
+        padding-left: 12px;
+        padding-right: 34px;
+        /* Body */
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .Variant {
+        position: absolute;
+        top: 63px;
+        left: 20px;
+        opacity: 1;
+    }
+
+    .Variant input {
+        width: 719px;
+        height: 41px;
+        padding-left: 34px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .Variant svg1 {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .Variant svg2 {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .Variant svg.left {
+        left: 12px;
+    }
+
+    /* hover */
+    .Variant input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .Variant:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .Variant input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .Variant :disabled+.icon,
+    .Variant :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .min {
+        position: absolute;
+        top: 107px;
+        left: 20px;
+        opacity: 1;
+    }
+
+    .min input {
+        width: 237px;
+        height: 38px;
+        padding-left: 12px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .min svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    /* hover */
+    .min input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .min input:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .min input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .min :disabled+.icon,
+    .min :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .max {
+        position: absolute;
+        top: 107px;
+        left: 263px;
+        opacity: 1;
+    }
+
+    .max input {
+        width: 251px;
+        height: 38px;
+        padding-left: 12px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .max svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    /* hover */
+    .max input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .max input:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .max input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .max :disabled+.icon,
+    .max :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .model {
+        position: absolute;
+        top: 107px;
+        left: 519px;
+        opacity: 1;
+    }
+
+    .model input {
+        width: 220px;
+        height: 38px;
+        padding-left: 12px;
+        padding-right: 34px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+        border-width: 1px;
+        border-color: #9095A1FF;
+        /* neutral-500 */
+        outline: none;
+    }
+
+    .model svg {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 16px;
+        height: 16px;
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    /* hover */
+    .model input:hover {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #6F7787FF;
+        /* neutral-550 */
+    }
+
+    /* focused */
+    .model input:focused {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    /* disabled */
+    .model input:disabled {
+        color: #171A1FFF;
+        /* neutral-900 */
+        background: #FFFFFFFF;
+        /* white */
+        border-color: #9095A1FF;
+        /* neutral-500 */
+    }
+
+    .model :disabled+.icon,
+    .model :disabled+.icon+.icon {
+        fill: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .Handguns {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 248px;
+        height: 41px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 6px 0px 0px 0px;
+        /* border-tl-l */
+        font-size: 14px;
+    }
+
+    .Hunting {
+        position: absolute;
+        color: white;
+        top: 0px;
+        left: 247px;
+        width: 257px;
+        height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px;
+        font-size: 14px;
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .Shotguns {
+        position: absolute;
+        display: table;
+        color: white;
+        top: 0px;
+        left: 500px;
+        width: 245px;
+        height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px;
+        font-size: 14px;
+    }
+
+    .Semi {
+        position: absolute;
+        display: table;
+        color: white;
+        position: absolute;
+        left: 743px;
+        width: 253px;
+        height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px 6px 0px 0px;
+        /* border-tr-none */
+        font-size: 14px;
+    }
+
+    .head-text {
+        position: absolute;
+        top: 67px;
+        left: 235px;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 24px;
+        line-height: 36px;
+        color: #262020FF;
+        /* primary-500 */
+    }
+
+    .searchFire {
+        position: absolute;
+        top: 64px;
+        left: 745px;
+        width: 232px;
+        height: 79px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFFFF;
+        /* white */
+        background: #B61E10FF;
+        /* secondary-500 */
+        opacity: 1;
+        border: none;
+        border-radius: 4px;
+        /* border-m */
+        box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+        /* shadow-s */
+        gap: 6px;
+    }
+
+    .searchFire .icon {
+        width: 16px;
+        height: 16px;
+        /* white */
+    }
+
+    /* Hover */
+    .searchFire:hover {
+        color: #FFFFFFFF;
+        /* white */
+        background: #97190DFF;
+        /* secondary-600 */
+    }
+
+    /* Pressed */
+    .searchFire:hover:active {
+        color: #FFFFFFFF;
+        /* white */
+        background: #77130AFF;
+        /* secondary-700 */
+    }
+
+    /* Disabled */
+    .searchFire:disabled {
+        opacity: 0.4;
+    }
+
+    a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    footer {
+        position: absolute;
+        top: 1993px;
+        left: 0px;
+        width: 100%;
+        height: 365px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 0px;
+    }
+
+    .footer-logo {
+        text-align: left;
+        margin-top: 96px;
+        left: 153px;
+        width: 138px;
+        height: 68px;
+        font-weight: bold;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 40px;
+        line-height: 56px;
+        /* neutral-700 */
+    }
+
+    .footer-Prod {
+        text-align: left;
+        margin-top: 96px;
+        left: 371px;
+    }
+
+    .footer-Res {
+        text-align: left;
+        margin-top: 120px;
+        left: 543px;
+    }
+
+    .footer-Com {
+        text-align: left;
+        margin-top: 96px;
+        left: 735px;
+    }
+
+    .footer-Comp {
+        text-align: left;
+        margin-top: 96px;
+        left: 943px;
+    }
+
+    .footer-Sup {
+        text-align: left;
+        margin-top: 96px;
+        left: 1123px;
+    }
+
+    .footer-text {
+        text-align: left;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 16px;
+        line-height: 26px;
+        color: #171A1FFF;
+        /* neutral-900 */
+    }
+</style>
+
+<body>
+    <div class="nav_bar">
+        <header class="d-flex align-items-center py-3 bg-light header">
+            <div class="container">
+                <nav class="navbar-expand-lg " action="/semi" method="post">
+                    <div id="navbarNav">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="C:\Users\eltin\Documents\demo website\Views\home.html">Logo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="C:\Users\eltin\Documents\demo website\Views\buy.html">Buy a
+                                    Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sell a Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Value my Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Get Your compentency</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/userProf">User Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="C:\Users\eltin\Documents\demo website\Views\Register.html"><button
+                                        type="button" class="btn btn-danger"
+                                        href="C:\Users\eltin\Documents\demo website\Views\Login.html">Login or
+                                        Sign
+                                        up</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    </div>
+    <div class="header-img">
+        <img src="C:\Users\eltin\Documents\demo website\Views\Assets\Image 25 (1).png" class="img-fluid" alt="...">
+    </div>
+    <div class=" box">
+        <div class="heading">
+            <div class="container text-center">
+                <form action="C:\Users\eltin\Documents\demo website\Views\buy.html">
+                    <div class="col">
+                        <button type="submit" class="Handguns" value="Handguns">Handguns</button>
+                    </div>
+                </form>
+                <form action="C:\Users\eltin\Documents\demo website\Views\rifle.html">
+                    <div class="col">
+                        <button type="submit" class="Hunting" value="Hunting Rifle">Hunting Rifle</button>
+                    </div>
+                </form>
+                <form action="C:\Users\eltin\Documents\demo website\Views\shotgun.html">
+                    <div class="col">
+                        <button type="submit" class="Shotguns" value="Shotguns">Shotgun</button>
+                    </div>
+                </form>
+                <form action="C:\Users\eltin\Documents\demo website\Views\semi.html">
+                    <div class="col">
+                        <button type="submit" class="Semi" value="Semi-Automatic">Semi-Automatic</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="dropdown-header">
+            <div class="mb-3">
+                <div class="Variant">
+                    <input type="text" name="Model" placeholder="Search Make, Model and Variant" class="form-control"
+                        id="exampleInputPassword1">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="min">
+                    <input type="text" name="minPrice" placeholder="Min Price" class="form-control"
+                        id="exampleInputPassword1">
+                </div>
+            </div>
+            <div class="max">
+                <input type="text" name="minPrice" placeholder="Max Price" class="form-control"
+                    id="exampleInputPassword1">
+            </div>
+            <div class="model">
+                <input type="text" name="model" placeholder="Make & Model" class="form-control"
+                    id="exampleInputPassword1">
+            </div>
+        </div>
+        <div class="searchFire">
+            <button style="background: #B61E10FF; border: 0;">Search</button>
+        </div>
+    </div>
+    </form>
+    <br>
+    <div class="link">
+    </div>
+    </div>
+    </div>
+    <div class="new">
+        <h1>New & Used Semi-Automatic's For Sale</h1>
+    </div>
+    <div class="handgun-home">
+        <h6>Home</h6>
+    </div>
+    <div class="box2">
+        <div>
+            <div class="year1">
+                <h6>Year</h6>
+            </div>
+            <div class="min2">
+                <input type="text" name="min" placeholder="Min" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+        <div class="max2">
+            <input type="text" name="max" placeholder="Max" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="new-firearms">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Featured Firearms
+                </label>
+            </div>
+        </div>
+        <div class="used-firearms">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Used Firearms
+                </label>
+            </div>
+        </div>
+        <div class="brand">
+            <input type="text" name="brand" placeholder="Brand" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="type">
+            <input type="text" name="Handgun Type" placeholder="Handgun Type" class="form-control"
+                id="exampleInputPassword1">
+        </div>
+        <div class="colours">
+            <input type="text" name="Colours" placeholder="Colours" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="seller">
+            <input type="text" name="Seller Type" placeholder="Seller Type" class="form-control"
+                id="exampleInputPassword1">
+        </div>
+    </div>
+    <div class="feature">
+        <h3> FEATURE LISTINGS</h3>
+    </div>
+    <div class="premium">
+        <h3> PREMIUM LISTING</h3>
+    </div>
+    <div class="box3">
+        <div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="footer-logo">
+                        Logo
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-Prod">
+                        <h6>Product</h6>
+                    </div>
+                    <div class="footer-text">
+                        <a href="#" style="color: black;">Features</a>
+                        <br>
+                        <a href="#" style="color: black;">Pricing</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-Res">
+                        <h6>Recourses</h6>
+                    </div>
+                    <div class="footer-text">
+                        <a href="#" style="color: black;">Blog</a>
+                        <br>
+                        <a href="#" style="color: black;">User Guides</a>
+                        <br>
+                        <a href="#" style="color: black;">Webinars</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-Com">
+                        <h6>Community</h6>
+                    </div>
+                    <div class="footer-text">
+                        <a href="#" style="color: black;">Developers</a>
+                        <br>
+                        <a href="#" style="color: black;">Users</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-Comp">
+                        <h6>Company</h6>
+                    </div>
+                    <div class="footer-text">
+                        <a href="#" style="color: black;">About</a>
+                        <br>
+                        <a href="#" style="color: black;">Join Us</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-Sup">
+                        <h6>Support</h6>
+                    </div>
+                    <div class="footer-text">
+                        <a href="#" style="color: black;">Help center</a>
+                        <br>
+                        <a href="#" style="color: black;">Chat Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row align-items-end">
+                <div class="col">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="float:left; margin-top: 55px; background-color: white; color: black;">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="text-size">
+                        <div class="terms">2022 Brand,Inc,Privacy-Terms-Sitemap</div>
+                    </div>
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <form action="/" method="post">
+</form> -->
+</body>
+</body>
+
+</html>

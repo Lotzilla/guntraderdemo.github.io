@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\eltin\Documents\demo website\Views\stylesheets\home.css">
+
+</head>
+<style>
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    .seconderow {
+
+        margin-top: 250px;
+        margin-bottom: 40px;
+        height: 300px;
+    }
+
+    .nav_bar {
+        position: relative;
+        max-width: 100%;
+        height: 48px;
+        background: #1E2128FF;
+        /* neutral-800 */
+
+    }
+
+    .header_img {
+        top: 47px;
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .box {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 873px;
+        height: 351px;
+        background: #DEE1E6FF;
+        box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
+        margin: 0px;
+    }
+
+    .Variant {
+        position: absolute;
+        top: 124px;
+        left: 16px;
+        opacity: 1;
+        width: 836px;
+        height: 36px;
+    }
+
+    .search {
+        position: absolute;
+        top: 180px;
+        left: 16px;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        color: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .min {
+        position: absolute;
+        top: 214px;
+        left: 16px;
+        opacity: 1;
+        width: 408px;
+        height: 34px;
+
+
+    }
+
+    .max {
+        position: absolute;
+        top: 214px;
+        left: 444px;
+        opacity: 1;
+        width: 408px;
+        height: 34px;
+    }
+
+    .Handguns {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 41px;
+    }
+
+    .Hunting {
+        position: absolute;
+        top: 0px;
+        left: 216px;
+        width: 200px;
+        height: 41px;
+    }
+
+    .Shotguns {
+        position: absolute;
+        top: 0px;
+        left: 437px;
+        width: 200px;
+        height: 41px;
+    }
+
+    .Semi {
+        position: absolute;
+        top: 0px;
+        left: 657px;
+        width: 200px;
+        height: 41px;
+    }
+
+    .head-text {
+        position: absolute;
+        top: 67px;
+        left: 235px;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 24px;
+        line-height: 36px;
+        color: #262020FF;
+        /* primary-500 */
+    }
+
+    .searchFire {
+        position: absolute;
+        top: 279px;
+        left: 17px;
+        width: 835px;
+        height: 51px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFFFF;
+        /* white */
+        background: #B61E10FF;
+        /* secondary-500 */
+        /* opacity: 1;
+    border: none;
+    border-radius: 4px; */
+        /* border-m */
+        box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+        /* shadow-s */
+    }
+
+    .searchFire:hover {
+        color: #FFFFFFFF;
+        /* white */
+        background: #97190DFF;
+        /* secondary-600 */
+    }
+
+    .searchFire:hover:active {
+        color: #FFFFFFFF;
+        /* white */
+        background: #77130AFF;
+        /* secondary-700 */
+    }
+
+    .third-row {
+        top: 875px;
+        left: 0px;
+        width: 100%;
+        height: 361px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 4px;
+    }
+
+    .buySell {
+        text-align: center;
+        margin: 50px;
+    }
+
+
+    .fourthrow {
+        margin: 50px;
+        height: 300px;
+    }
+
+    .reviews {
+        top: 0px;
+        left: 550px;
+        width: 105px;
+        font-family: Montserrat;
+        font-size: 24px;
+        line-height: 36px;
+        color: #424856FF;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .par1 {
+        margin: 50px;
+        width: 776px;
+        text-align: left;
+    }
+
+    .Trusted {
+        margin-left: 300px;
+    }
+
+    li a:hover {
+        background-color: grey;
+    }
+
+    .header {
+        background-color: black !important;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+    .text-size {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    footer {
+        top: 1993px;
+        left: 0px;
+        width: 100%;
+        height: 365px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 0px;
+    }
+
+    .footer-logo {
+        text-align: left;
+        margin-top: 96px;
+        left: 153px;
+        width: 138px;
+        height: 68px;
+        font-weight: bold;
+        font-family: Montserrat;
+        /* Heading */
+        font-size: 40px;
+        line-height: 56px;
+        /* neutral-700 */
+    }
+
+    .footer-Prod {
+        text-align: left;
+        margin-top: 96px;
+        left: 371px;
+    }
+
+    .footer-Res {
+        text-align: left;
+        margin-top: 120px;
+        left: 543px;
+    }
+
+    .footer-Com {
+        text-align: left;
+        margin-top: 96px;
+        left: 735px;
+    }
+
+    .footer-Comp {
+        text-align: left;
+        margin-top: 96px;
+        left: 943px;
+    }
+
+    .footer-Sup {
+        text-align: left;
+        margin-top: 96px;
+        left: 1123px;
+    }
+
+    .footer-text {
+        text-align: left;
+        font-family: Open Sans;
+        /* Body */
+        font-size: 16px;
+        line-height: 26px;
+        color: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .text-size {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <div class="nav_bar">
+        <header class="d-flex align-items-center py-3 bg-light header">
+            <div class="container">
+                <nav class="navbar-expand-lg " action="/" method="post">
+                    <div id="navbarNav">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Logo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="C:\Users\eltin\Documents\demo website\Views\buy.html">Buy a
+                                    Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sell a Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Value my Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Get Your compentency</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/userProf">User Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="C:\Users\eltin\Documents\demo website\Views\Register.html"><button
+                                        type="button" class="btn btn-danger"
+                                        href="C:\Users\eltin\Documents\demo website\Views\Login.html">Login or
+                                        Sign
+                                        up</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div>
+        <div class="header_img">
+            <img src="C:\Users\eltin\Documents\demo website\Views\Assets\Group 38 (1).png" class="img-fluid">
+        </div>
+        <div class=" box">
+            <div class="heading">
+                <div class="container text-center">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <input type="button" class="Handguns" value="Handguns">
+                        </div>
+                        <div class="col">
+                            <input type="button" class="Hunting" value="Hunting Rifle">
+                        </div>
+                        <div class="col">
+                            <input type="button" class="Shotguns" value="Shotguns">
+                        </div>
+                        <div class="col">
+                            <input type="button" class="Semi" value="Semi-Automatic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head-text">
+                <h4>Find new & used handguns for sale</h4>
+            </div>
+            <div class="dropdown-header">
+                <div class="mb-3">
+                    <div class="Variant">
+                        <input type="text" name="Model" placeholder="Search Make, Model and Variant"
+                            class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="search">
+                        <label for="exampleInputPassword1" class="form-label">Search by Price:</label>
+                    </div>
+                    <div class="col-4">
+                        <div class="min">
+                            <input type="text" name="minPrice" placeholder="Min Price" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="max">
+                            <input type="text" name="minPrice" placeholder="Max Price" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="searchFire">
+                        <button type="button">Search 5000 Firearms</button>
+                    </div>
+                </div>
+                </form>
+                <br>
+                <div class="link">
+                </div>
+            </div>
+        </div>
+        <div class=" seconderow">
+            <div class="container text-center">
+                <div class="row row-cols-4">
+                    <div class="col"><img src="C:\Users\eltin\Documents\demo website\Views\Assets\Icon button 1.png"
+                            class="img-thumbnail">
+                        <br>
+                        <h6>Compentency Application</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit nemo mollitia
+                            accusamus
+                            odio
+                            exercitationem quod</p>
+                    </div>
+                    <div class="col"><img src="C:\Users\eltin\Documents\demo website\Views\Assets\Icon button 2.png"
+                            class="img-thumbnail" alt="...">
+                        <br>
+                        <h6>Sell Your Firearms</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit nemo mollitia
+                            accusamus
+                            odio
+                            exercitationem quod</p>
+                    </div>
+                    <div class="col"><img src="C:\Users\eltin\Documents\demo website\Views\Assets\Icon button 3.png"
+                            class="img-thumbnail" alt="...">
+                        <br>
+                        <h6>Firearm Valuation</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit nemo mollitia
+                            accusamus
+                            odio
+                            exercitationem quod</p>
+                    </div>
+                    <div class="col"><img src="C:\Users\eltin\Documents\demo website\Views\Assets\Icon button 4.png"
+                            class="img-thumbnail" alt="..."><br>
+                        <h6>Background Checks</h6>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit velit nemo mollitia
+                            accusamus
+                            odio
+                            exercitationem quod</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col align-self-start">
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="buySell">
+                            <h1>Buy or Sell Now</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim corrupti culpa
+                                nobis
+                                quidem</p>
+                            <button type="button" class="btn btn-primary btn-lg"
+                                style="background-color: black; width: 150px; border-color: black">Buy
+                                Now</button>
+                            <button type="button" class="btn btn-secondary btn-lg"
+                                style="background-color: Red; width: 150px; border-color: red;">Sell
+                                Now</button>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col align-self-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fourthrow">
+            <div class="container text-center">
+                <div class="row justify-content-start">
+                    <div class="col-4">
+                        <div class="fourthImg">
+                            <img src="C:\Users\eltin\Documents\demo website\Views\Assets\Img1.PNG" class="img-thumbnail"
+                                alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="par1">
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                            </div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus optio earum modi
+                                quam,
+                                veritatis
+                                corporis numquam totam et quo, eius, in id reprehenderit? Fugiat, laudantium omnis.
+                                Est
+                                amet
+                                ut
+                                reprehenderit!'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Trusted">
+            <img src="C:\Users\eltin\Documents\demo website\Views\Assets\Group 6.png" alt="">
+        </div>
+        <footer>
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="footer-logo">
+                            Logo
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-Prod">
+                            <h6>Product</h6>
+                        </div>
+                        <div class="footer-text">
+                            <a href="#" style="color: black;">Features</a>
+                            <br>
+                            <a href="#" style="color: black;">Pricing</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-Res">
+                            <h6>Recourses</h6>
+                        </div>
+                        <div class="footer-text">
+                            <a href="#" style="color: black;">Blog</a>
+                            <br>
+                            <a href="#" style="color: black;">User Guides</a>
+                            <br>
+                            <a href="#" style="color: black;">Webinars</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-Com">
+                            <h6>Community</h6>
+                        </div>
+                        <div class="footer-text">
+                            <a href="#" style="color: black;">Developers</a>
+                            <br>
+                            <a href="#" style="color: black;">Users</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-Comp">
+                            <h6>Company</h6>
+                        </div>
+                        <div class="footer-text">
+                            <a href="#" style="color: black;">About</a>
+                            <br>
+                            <a href="#" style="color: black;">Join Us</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-Sup">
+                            <h6>Support</h6>
+                        </div>
+                        <div class="footer-text">
+                            <a href="#" style="color: black;">Help center</a>
+                            <br>
+                            <a href="#" style="color: black;">Chat Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row align-items-end">
+                    <div class="col">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="float:left; margin-top: 55px; background-color: white; color: black;">
+                            English
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="text-size">
+                            <div class="terms">2022 Brand,Inc,Privacy-Terms-Sitemap</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        One of three columns
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <form action="/" method="post">
+    </form> -->
+</body>
+
+</html>
