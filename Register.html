@@ -15,14 +15,32 @@
     <script src=".\public\Javascript\register.js"></script>
 </head>
 <style>
-    /* .center {
-    position: relative;
-} */
+    body {
+        background-image: url("./Assets/Image 20 (3).png");
+        top: 48px;
+        left: 0px;
+        width: 100%;
+        height: 858px;
+        /* neutral-800 */
+        border-radius: 0px;
+    }
+
+    .nav_bar {
+        position: relative;
+        max-width: 110%;
+        height: 48px;
+        background: #1E2128FF;
+        /* neutral-800 */
+
+    }
+
+    .center {
+        position: relative;
+    }
 
     .link {
         text-align: center;
     }
-
 
     .box {
         position: absolute;
@@ -290,8 +308,8 @@
         position: absolute;
         top: 1250px;
         left: 0px;
-        width: 100%;
-        height: 365px;
+        width: 110%;
+        height: 486px;
         background: #DEE1E6FF;
         /* neutral-300 */
         border-radius: 0px;
@@ -301,7 +319,7 @@
         text-align: left;
         margin-top: 96px;
         left: 153px;
-        width: 138px;
+        max-width: 138px;
         height: 68px;
         font-weight: bold;
         font-family: Montserrat;
@@ -395,38 +413,40 @@
         <header class="d-flex align-items-center py-3 bg-light header">
             <div class="container">
                 <nav class="navbar-expand-lg " action=".\home.html" method="post">
-                    <div id="navbarNav">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href=".\home.html">Logo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href=".\buy.html">Buy a
-                                    Firearm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sell a Firearm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Value my Firearm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Get Your compentency</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="/userProf">User Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href=".\Register.html"><button type="button" class="btn btn-danger"
-                                        href=".\Login.html">Login or
-                                        Sign
-                                        up</button></a>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="navwidth">
+                        <div id="nav-bar">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href=".\home.html">Logo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=".\buy.html">Buy a
+                                        Firearm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sell a Firearm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Value my Firearm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Get Your compentency</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/userProf">User Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href=".\Register.html"><button type="button" class="btn btn-danger"
+                                            href=".\Register.html">Login or
+                                            Sign
+                                            up</button></a>
+                                </li>
+                            </ul>
+                        </div>
                 </nav>
             </div>
-        </header>
+    </div>
+    </header>
     </div>
     <!-- <% if(typeof alert !='undefined' ){%>
         <% alert.forEach(function(error){%>
