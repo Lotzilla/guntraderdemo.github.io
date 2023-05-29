@@ -11,28 +11,27 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href=".\stylesheets\register.css">
-    <script src=".\public\Javascript\register.js"></script>
+    <link rel="stylesheet" href="/stylesheets/buyandsell.css">
 </head>
 <style>
     body {
-        background-image: url("./Assets/Image 20 (3).png");
-        top: 48px;
-        left: 0px;
+        background-image: url("./Assets./Image 20 (3).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
-        height: 858px;
+        height: 1400px;
         /* neutral-800 */
         border-radius: 0px;
     }
 
-    .nav_bar {
-        position: relative;
-        max-width: 110%;
-        height: 48px;
-        background: #1E2128FF;
-        /* neutral-800 */
+    /* .nav_bar {
+    position: relative;
+    max-width: 110%;
+    height: 48px;
+    background: #1E2128FF;
 
-    }
+} */
 
     .center {
         position: relative;
@@ -359,7 +358,104 @@
         left: 1123px;
     }
 
-    .footer-text {
+    .Buyer {
+        position: absolute;
+        top: 450px;
+        left: 450px;
+        width: 369px;
+        height: 369px;
+        text-align: center;
+        line-height: 150px;
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+    }
+
+    .Buyertxt {
+        /* position: absolute; */
+        top: 451px;
+        left: 450px;
+        /* font-family: Montserrat; */
+        /* Heading */
+        font-size: 32px;
+        line-height: 75px;
+        color: #171A1FFF;
+        /* neutral-900 */
+        text-align: center;
+    }
+
+    .Seller {
+        position: absolute;
+        top: 450px;
+        left: 850px;
+        width: 369px;
+        height: 369px;
+        line-height: 150px;
+        text-align: center;
+        background: #FFFFFFFF;
+        /* white */
+        border-radius: 4px;
+        /* border-m */
+    }
+
+    .Sellertxt {
+        /* position: absolute; */
+        top: 451px;
+        left: 450px;
+        /* font-family: Montserrat; */
+        /* Heading */
+        font-size: 32px;
+        line-height: 75px;
+        color: #171A1FFF;
+        /* neutral-900 */
+    }
+
+    .btn-primary {
+        /* position: absolute; */
+        top: 513px;
+        left: 356px;
+        width: 200px;
+        height: 44px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* Body */
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFFFF;
+        /* white */
+        background: #262020FF;
+        /* primary-500 */
+        opacity: 1;
+        border: none;
+        border-radius: 4px;
+        /* border-m */
+    }
+
+    /* Hover */
+    .btn-primary:hover {
+        color: #FFFFFFFF;
+        /* white */
+        background: #443939FF;
+        /* primary-450 */
+    }
+
+    /* Pressed */
+    .btn-primary:hover:active {
+        color: #FFFFFFFF;
+        /* white */
+        background: #615151FF;
+        /* primary-400 */
+    }
+
+    /* Disabled */
+    .btn-primary:disabled {
+        opacity: 0.4;
+    }
+
+    .btn-primary-text {
         text-align: left;
         font-family: Open Sans;
         /* Body */
@@ -369,161 +465,66 @@
         /* neutral-900 */
     }
 </style>
-<script>
-    function validateSignUpForm() {
-        var name = document.getElementById('name').value.trim()
-        var lastname = document.getElementById('lastname').value.trim()
-        var email = document.getElementById('email').value.trim()
-        var password = document.getElementById('password').value.trim()
-
-        if (name === "") {
-            alert("First Name must be filled out");
-            return false;
-        }
-
-        if (lastname === "") {
-            alert("Last name must be filled out");
-            return false;
-        }
-
-        if (email === "") {
-            alert("Email must be filled out");
-            return false;
-        }
-
-        if (password === "") {
-            alert("Password must be filled out");
-            return false;
-        }
-        document.getElementById('signup-button').addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Perform your form validations here
-            if (validateSignUpForm()) {
-                // All validations passed, redirect to the login page
-                window.location.href = '.\Login.html'; // Replace 'login.html' with the actual URL of your login page
-            }
-        });
-
-    }
-</script>
 
 <body>
     <div class="nav_bar">
         <header class="d-flex align-items-center py-3 bg-light header">
             <div class="container">
-                <nav class="navbar-expand-lg " action=".\home.html" method="post">
-                    <div class="navwidth">
-                        <div id="nav-bar">
-                            <ul class="nav justify-content-center">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href=".\home.html">Logo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=".\buy.html">Buy a
-                                        Firearm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=".\sell.html">Sell a Firearm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Value my Firearm</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Get Your compentency</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="/userProf">User Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href=".\buysell.html"><button type="button" class="btn btn-danger"
-                                            href=".\buysell.html">Login
-                                            or
-                                            Sign
-                                            up</button></a>
-                            </ul>
-                        </div>
+                <nav class="navbar-expand-lg " action="/" method="post">
+                    <div id="navbarNav">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Logo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=".\buy.html">Buy a
+                                    Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=".\sell.html">Sell a Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Value my Firearm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Get Your compentency</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/userProf">User Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href=".\buysell.html"><button type="button" class="btn btn-danger"
+                                        href=".\buysell.html">Login
+                                        or
+                                        Sign
+                                        up</button></a>
+                        </ul>
+                    </div>
                 </nav>
             </div>
+        </header>
     </div>
-    </header>
     </div>
-    <!-- <% if(typeof alert !='undefined' ){%>
-        <% alert.forEach(function(error){%>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <%= error.msg %>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    <span aria-hidden="true">&times;</span>
-            </div>
-            <% }) %>
-                <% } %> -->
-    <div class="box">
-        <div class="heading">
-            <h2>Sign Up</h2>
+    <box class="Buyer">
+        <img src=".\Assets.\Account circle 1.png" class="Buyerimg">
+        <h4 class="Buyertxt" action="register">Buyer</h4>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href=".\Register.html"> <button class="btn btn-primary" type="submit"> Sign Up</button></a>
+            <a href=".\login.html"><button class="btn btn-primary" type="submit" style="  color: #FFFFFFFF;
+                background: #9095A1FF;">Login</button></a>
         </div>
-        <form name="signUpForm" onsubmit="return validateSignUpForm()" method="post">
-            <div class="row">
-                <div class="col">
-                    <label for="name"> First Name</label>
-                    <input type="name" name="name" class="form-control" id="name" placeholder="First name">
-                </div>
-                <div class="col">
-                    <label for="lastname">LastName</label>
-                    <input type="lastname" name="lastname" class="form-control" id="lastname" placeholder=" Last name">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password"
-                    placeholder="Password must be atleast 8+ characters">
-            </div>
-            <br>
-            <div class="check-form">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    By signing up,I agree with the Terms of Use & Privacy Policy
-                </label>
-            </div>
-            <div class="button-loc">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="submit" id="signup-button"
-                        style="background-color: black;">Sign Up</button>
-                </div>
-
-            </div>
-            <div class="account">
-                <p>Already have a account?
-                    <a href=".\Login.html" style="color: Black;">Log
-                        In</a>
-                </p>
-            </div>
-            <br>
-            <div class="line_left">
-                <img src=".\Assets\Divider 7.png" alt="">
-            </div>
-            <div class="or">
-                <p>OR</p>
-            </div>
-            <div class="line_right">
-                <img src=".\Assets\Divider 6.png" alt="">
-            </div>
-            <div class="Google">
-                <button type="button"><a href="#"></a></button>
-            </div>
-            <div class="facebook">
-                <button type="button"><a href="#"></a></button>
-            </div>
-            <div class="Apple">
-                <button type="button"><a href="#"></a></button>
-            </div>
-            <br>
-        </form>
-    </div>
+    </box>
+    <br>
+    <br>
+    <box class="Seller">
+        <img src=".\Assets.\Store 1.png" class="Buyerimg">
+        <h4 class="Sellertxt">Seller</h4>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a href=".\Register.html"> <button class="btn btn-primary" type="submit"> Sign Up</button></a>
+            <a href=".\login.html"><button class="btn btn-primary" type="submit" style="  color: #FFFFFFFF;
+                background: #9095A1FF;">Login</button></a>
+        </div>
+    </box>
     <footer>
         <div class="container text-center">
             <div class="row align-items-center">
