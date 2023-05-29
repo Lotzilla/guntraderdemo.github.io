@@ -50,24 +50,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
-        width: 873px;
+        width: 868px;
         height: 351px;
         background: #DEE1E6FF;
         box-shadow: 0px 4px 9px #171a1f, 0px 0px 2px #171a1f;
         margin: 0px;
+        border-radius: 6px 0px 0px 0px;
     }
 
-    .handgun-home {
+    /* .handgun-home {
         position: absolute;
         top: 580px;
         left: 25%;
         font-family: Open Sans;
-        /* Body */
         font-size: 14px;
         line-height: 22px;
         color: #171A1FFF;
-        /* neutral-900 */
-    }
+    } */
 
     .Variant {
         position: absolute;
@@ -112,40 +111,67 @@
 
     .Handguns {
         position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 200px;
+        top: -1px;
+        left: -1px;
+        width: 218.25px;
         height: 41px;
+        background: #DEE1E6FF;
+        /* neutral-300 */
+        border-radius: 6px 0px 0px 0px;
+        /* border-tl-l */
+        font-size: 14px;
     }
 
     .Hunting {
         position: absolute;
-        top: 0px;
-        left: 216px;
-        width: 200px;
+        color: white;
+        top: -1px;
+        left: 215px;
+        width: 218.25px;
         height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px;
+        font-size: 14px;
+        content: "";
+        clear: both;
+        display: table;
     }
 
     .Shotguns {
         position: absolute;
-        top: 0px;
-        left: 437px;
-        width: 200px;
+        display: table;
+        color: white;
+        top: -1px;
+        left: 433px;
+        width: 218.25px;
         height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px;
+        font-size: 14px;
     }
 
     .Semi {
         position: absolute;
-        top: 0px;
-        left: 657px;
-        width: 200px;
+        display: table;
+        color: white;
+        position: absolute;
+        top: -1px;
+        left: 651px;
+        width: 218.25px;
         height: 41px;
+        background: #1E2128FF;
+        /* neutral-800 */
+        border-radius: 0px 6px 0px 0px;
+        /* border-tr-none */
+        font-size: 14px;
     }
 
     .head-text {
         position: absolute;
         top: 67px;
-        left: 235px;
+        left: 260px;
         font-family: Montserrat;
         /* Heading */
         font-size: 24px;
@@ -154,7 +180,7 @@
         /* primary-500 */
     }
 
-    .searchFire {
+    .d-grid {
         position: absolute;
         top: 279px;
         left: 17px;
@@ -164,7 +190,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: Open Sans;
         /* Body */
         font-size: 14px;
         line-height: 22px;
@@ -180,17 +205,17 @@
         /* shadow-s */
     }
 
-    .searchFire:hover {
+    .d-grid:hover {
         color: #FFFFFFFF;
         /* white */
-        background: #97190DFF;
+        background: #B61E10FF;
         /* secondary-600 */
     }
 
-    .searchFire:hover:active {
+    .d-grid:hover:active {
         color: #FFFFFFFF;
         /* white */
-        background: #77130AFF;
+        background: #B61E10FF;
         /* secondary-700 */
     }
 
@@ -446,8 +471,9 @@
                                 id="exampleInputPassword1">
                         </div>
                     </div>
-                    <div class="searchFire">
-                        <button type="button">Search 5000 Firearms</button>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button"
+                            style="background: #B61E10FF; border:  #B61E10FF;">Search 5000 Firearms</button>
                     </div>
                 </div>
                 </form>
